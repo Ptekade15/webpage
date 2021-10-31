@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top{
+    height: 150px; 
+    align-items: center;   
+}
+
+.top .const ul{   
+    margin-left: 85%;
+    display: inline-block;
+    margin-top: 50px;
+    position: absolute;
+    font-size: 20px;
+    list-style-type: none;   
+}
+
+.top .const ul li{
+    display: inline-block;
+    padding: 10px;
+    font-family: cursive;
+    cursor: pointer;  
+}
+
+.top .const ul li img{
+    vertical-align: middle;
+}
+
+.top .const ul li a:hover{
+    color: #d4af37;
+}
+
+.top .const ul li span{
+    position: absolute;
+    font-size: x-small;
+    border-radius: 30px;
+    border: solid red;
+    background-color: rgb(241, 50, 50);
+    color: white;
+   vertical-align: top; 
+}
+
+.logo img{
+    display: flex;
+    align-content: center;
+    height: 150px;
+    width: 180px;
+    margin: auto;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Raleway Regular';
+}
+
+.containers{
+    max-width: 1200px;
+    padding: 0px;
+    margin: auto; 
+    
+}
+
+.navbar{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #d4af37;
+    border-top: 3px solid #d4af37;
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+    border-color: #fff;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+
+    
+}
+nav ul li{
+    display: inline-block;
+ 
+    
+}
+
+nav ul li a{
+    color: black;
+    display: block;
+    padding: 0 10px;
+    line-height: 50px;
+    font-size: 18px;
+    
+    transition: .2s;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active{
+    color:#d4af37;
+  }
+
+  nav ul li:hover > ul{
+    
+    opacity: 1;
+    visibility: visible;
+    
+  }
+
+  nav ul ul{
+    
+    background-color: white;
+    position: absolute;
+    border-top: 1px solid #d4af37;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+
+
+.btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .5rem 1rem;
+    font-size: 1.7rem;
+    background: #fff;
+    font-weight: 100;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: rgb(6, 168, 6);
+    color: #fff;
+    letter-spacing: .1rem;
+}
+
+.home{
+    margin-top: 50px;
+    padding: 0;
+}
+
+.home .home-slider .box{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .home-slider .box .content{
+    text-align: center;
+    margin-right: 65%;
+    margin-bottom: 20rem;
+}
+
+.home .home-slider .box .content h3{
+    font-size: 4rem;
+    color: red;
+    transition-delay: .2s;
+}
+
+.home .home-slider .box .content p{
+    font-size: 2.5rem;
+    color: darkmagenta;
+    transition-delay: .4s;
+    padding: 1rem 0;
+}
+
+.home .home-slider .box .content button{
+    transition-delay: .6s;
+}
+
+.home .home-slider .box .content > *{
+    transform: translateY(2rem);
+    opacity: 0;
+}
+
+.home .home-slider .swiper-slide-active .content > *{
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+.home .home-slider .swiper-button-next{
+    right: 4rem;
+    color: #fff;
+    
+}
+
+.home .home-slider .swiper-button-prev{
+    left: 4rem;
+    color: #fff;
+    
+}
+
+.home .home-slider .swiper-button-next:hover,
+.home .home-slider .swiper-button-prev:hover{
+    color: palevioletred;
+}
+
+.home .home-slider:hover .swiper-button-next,
+.home .home-slider:hover .swiper-button-prev{
+    opacity: 1;
+}
+
+@media (max-width:450px){
+    .home .home-slider .swiper-button-next,
+    .home .home-slider .swiper-button-prev{
+        display: none;
+        
+    }
+    
+    
+}
+
+
+section.top-products{
+    background: gainsboro;
+}
+
+.section-heading{
+    font-family: 'Raleway-bold';
+    text-align: center;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.section-heading::after{
+    content: '';
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-image: url(../images/horizontal-design.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -40px;
+
+}   
+
+section.top-products .product-slider .product-card{
+    background: white;
+    padding: 1.5rem 0;
+    border-radius: 4px;
+}
+
+section.top-products .product-slider .product-card .product-image img{
+    width: 80%;
+    height: 200px;
+    object-fit: contain;
+    padding-bottom: 1rem;
+}
+
+hr{
+    border: 1px solid black;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+
+
+section.top-products .product-slider .product-card h2{
+    font-family: 'Raleway Bold';
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+section.top-products .product-slider .product-card .stars{
+    margin-bottom: 0.5rem;
+}
+section.top-products .product-slider .product-card .stars img{
+    margin-right: 0.25rem;
+}
+
+section.top-products .product-slider .product-card .price{
+    font-family: 'Raleway Medium';
+    color: red;
+    margin-bottom: 1rem;
+}
+
+section.top-products .product-slider .product-card button{
+    font-family: 'Raleway Medium';
+    color: black;
+    background: white;
+    border: 2px solid #d4af37;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease; 
+}
+
+section.top-products .product-slider .product-card button:hover{
+    background: #d4af37;
+    color: white;
+}
+
+.product-slider .product-card button img{
+    background: #d4af37;
+    padding: 0.50rem;
+    height: 32px;
+    margin-right: 1.2rem;
+}
+
+section.top-products .product-slider{
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+    margin-left: 120px;
+}
+
+.slick-slide{
+    margin: 0 22px;
+}
+
+.slick-list{
+    margin: 0 -22px;
+}
+
+.top-products .slider-btn{
+    
+    border: none;
+    background: #d4af37;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.prev-btn{
+    position: absolute;
+    top: 46%; 
+    left: 2rem;
+    z-index: 1;
+}
+
+.next-btn{
+    position: absolute;
+    top: 46%; 
+    right: -3rem;
+    z-index: 1;
+}
+
+.top-products .slider{
+    position: relative;
+    justify-content: center;
+}
+
+.top-products .btn-wrapper{
+    margin-top: 2rem;
+}
+
+
+.slick-track{
+    padding: 1rem 0;
+}
+
+section.top-products .container2 .btn-wrapper button{
+    background-color: #d4af37;
+}
+
+section.big-deal{
+    background: linear-gradient(
+        rgba(35,43,56,0.9),
+        rgba(35,43,56,0.9)
+    ),url(../images/timer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section.big-deal .timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -2rem;
+    margin-bottom: 2rem;
+}
+
+section.big-deal .timer div{
+    margin-right: 2rem;
+    background: coral;
+    width: 110px;
+    height: 110px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 300;
+    position: relative;
+}
+
+section.big-deal .timer div:before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    color: indigo;
+    font-style: 0.35em;
+    line-height: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+section.big-deal .timer div#day:before{
+    content: 'Days';
+}
+
+section.big-deal .timer div#hour:before{
+    content: 'Hours';
+}
+
+section.big-deal .timer div#minute:before{
+    content: 'Minutes';
+}
+
+section.big-deal .timer div#second:before{
+    content: 'Seconds';
+}
+
+
+
+.text-pure{
+    color: white;
+}
+
+footer{
+    background: black;
+    padding: 4rem 0;
+}
+
+footer .container-f{
+    display: flex;
+    color: whitesmoke;
+
+}
+
+footer .box{
+    flex: 1;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+footer .box ul{
+    list-style-type: none;
+}
+
+footer .box ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+footer .box ul li a:hover{
+    color: #d4af37;
+}
+
+footer .box h3{
+    border-bottom: 1px solid #d4af37;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .box p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+footer .box ul li{
+    margin-bottom: 1rem;
+}
+
+footer .box:nth-child(3) > div{
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer .box:nth-child(4) > div{
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer .box:nth-child(4){
+    text-align: left;
+}
+
+footer .box:nth-child(4) h3{
+    text-align: center;
+}
+
+footer .box:nth-child(4) > div img{
+    margin-right: 1rem;
+}
+
+footer .box:nth-child(4) ul li{
+    margin-bottom: 1.5rem;
+}
+
+footer.copyright{
+    padding: 1rem 0;
+    background: #d4af37;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 0.75rem;
+}
